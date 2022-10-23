@@ -1,12 +1,14 @@
-.portfolio-button {
+.button {
     display: flex;
     justify-content: center;
     gap: 9px;
     margin-bottom: 34px;
 
+    
+
 }
 
-.portfolio-button .button-link {
+.button__link {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     font-weight: 500;
@@ -23,8 +25,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-button .button-link:hover,
-.portfolio-button .button-link:focus {
+.button__link:hover,
+.button__link:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }

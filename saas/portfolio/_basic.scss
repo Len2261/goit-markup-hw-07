@@ -1,11 +1,11 @@
-.portfolio-list {
+.portfolio {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
 
-.portfolio-text {
+.portfolio__item {
     padding: 20px 24px;
     border: 1px solid var(--border-color);
     text-decoration: none;
@@ -13,7 +13,7 @@
 }
 
 
-.portfolio-list .portfolio-title {
+.portfolio__title {
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -23,20 +23,20 @@
     margin-bottom: 4px;
 }
 
-.portfolio-list .portfolio-description {
+.portfolio__description {
     color: var(--title-text-color);
     font-size: 16px;
     letter-spacing: 0.03em;
 }
 
 
-.box-overlay {
+.box__overlay {
     position: relative;
     overflow: hidden;
 }
 
 
-.box-overlay::before {
+.box__overlay::before {
     content: '';
     position: absolute;
     display: block;
@@ -49,8 +49,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box-overlay:hover .box-link::before,
-.box-overlay:focus .box-link::before {
+.box__overlay:hover .portfolio__link::before,
+.box__overlay:focus .portfolio__link::before {
     content: '';
     display: block;
     position: absolute;
@@ -62,7 +62,7 @@
 
 }
 
-.text-overlay {
+.text__overlay {
     position: absolute;
     opacity: 1;
     top: 0;
@@ -78,14 +78,14 @@
 }
 
 
-.box-link {
+.portfolio__link {
     display: block;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box-link:hover .text-overlay,
-.box-link:focus .text-overlay {
+.portfolio__link:hover .text__overlay,
+.portfolio__link:focus .text__overlay {
     transform: translateY(0);
     opacity: 1;
 

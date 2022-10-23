@@ -339,7 +339,7 @@ a {
   background-color: var(--back-second-color);
 }
 
-.section-team {
+.team {
   text-align: center;
   margin-bottom: 50px;
   font-size: 36px;
@@ -350,7 +350,7 @@ a {
   background-color: var(--back-second-color);
 }
 
-.team-list {
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,7 +362,7 @@ a {
           align-items: center;
 }
 
-.team {
+.team__photo {
   width: 270px;
   display: block;
   max-width: 100%;
@@ -373,7 +373,7 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
-.list-social {
+.list__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,7 +386,7 @@ a {
   gap: 10px;
 }
 
-.box-social {
+.box__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,12 +406,12 @@ a {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.box-social:hover, .box-social:focus {
+.box__social:hover, .box__social:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
 
-.team-list .team-title {
+.team__title {
   margin-bottom: 10px;
   text-align: center;
   font-size: 16px;
@@ -421,7 +421,8 @@ a {
   color: var(--primary-text-color);
 }
 
-.team-list .team-description {
+.team__description {
+  color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -429,7 +430,7 @@ a {
   text-align: center;
 }
 
-.team-text {
+.team__text {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -891,14 +892,7 @@ a {
   border-radius: 2px;
 }
 
-/* main-section */
-/* meaning section */
-/* Activity section */
-/* Our team */
-/* regular customers */
-/* contact section */
-/* Portfolio */
-.portfolio-button {
+.button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -909,7 +903,7 @@ a {
   margin-bottom: 34px;
 }
 
-.portfolio-button .button-link {
+.button__link {
   font-family: "Roboto", sans-serif;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -927,13 +921,13 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-button .button-link:hover,
-.portfolio-button .button-link:focus {
+.button__link:hover,
+.button__link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
-.portfolio-list {
+.portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -942,13 +936,13 @@ a {
   gap: 30px;
 }
 
-.portfolio-text {
+.portfolio__item {
   padding: 20px 24px;
   border: 1px solid var(--border-color);
   text-decoration: none;
 }
 
-.portfolio-list .portfolio-title {
+.portfolio__title {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -957,18 +951,18 @@ a {
   margin-bottom: 4px;
 }
 
-.portfolio-list .portfolio-description {
+.portfolio__description {
   color: var(--title-text-color);
   font-size: 16px;
   letter-spacing: 0.03em;
 }
 
-.box-overlay {
+.box__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.box-overlay::before {
+.box__overlay::before {
   content: "";
   position: absolute;
   display: block;
@@ -984,8 +978,8 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box-overlay:hover .box-link::before,
-.box-overlay:focus .box-link::before {
+.box__overlay:hover .portfolio__link::before,
+.box__overlay:focus .portfolio__link::before {
   content: "";
   display: block;
   position: absolute;
@@ -996,7 +990,7 @@ a {
   opacity: 1;
 }
 
-.text-overlay {
+.text__overlay {
   position: absolute;
   opacity: 1;
   top: 0;
@@ -1014,7 +1008,7 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box-link {
+.portfolio__link {
   display: block;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -1022,8 +1016,8 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box-link:hover .text-overlay,
-.box-link:focus .text-overlay {
+.portfolio__link:hover .text__overlay,
+.portfolio__link:focus .text__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
