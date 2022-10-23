@@ -1,0 +1,54 @@
+.propositions {
+        display: flex;
+        gap: 30px;
+
+    &__list {
+
+        width: 270px;
+    }
+
+    &__item {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    
+        height: 120px;
+        width: 270px;
+    
+        background-color: var(--back-meaning-color);
+        border-radius: 4px;
+    
+        }
+
+    &__title {
+        
+        margin-bottom: 10px;
+        margin-top: 0px;
+        
+        
+        @include font(14px, 700, 1.2);
+        
+        letter-spacing: 0.03em;
+        
+        color: var(--primary-text-color);
+        
+                }
+
+    &__description {
+
+        margin-top: 0px;
+
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        
+        color: var(--title-text-color);
+                     }
+
+}
+
+
+

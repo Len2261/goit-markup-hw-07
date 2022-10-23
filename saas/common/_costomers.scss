@@ -1,0 +1,44 @@
+.clients {
+
+                margin-bottom: 50px;
+                text-align: center;
+
+                @include font(36px, 700, 1.17);
+    
+                letter-spacing: 0.03em;
+
+        &__list {
+
+                display: flex;
+                gap: 30px;
+
+                }
+
+        &__link {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                width: 172px;
+                height: 94px;
+                color: var(--portfolio-border);
+                border: 1px solid var(--portfolio-border);
+                border-radius: 4px;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                
+        &:hover,
+        &:focus {
+                border-color: var(--accent-color);
+                color: var(--accent-color)
+                }
+                        }
+
+        &_icon {
+        
+                fill: currentColor;
+        
+                }
+}
+

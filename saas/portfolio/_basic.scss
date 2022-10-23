@@ -1,0 +1,97 @@
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.portfolio-text {
+    padding: 20px 24px;
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+
+}
+
+
+.portfolio-list .portfolio-title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+
+    margin-bottom: 4px;
+}
+
+.portfolio-list .portfolio-description {
+    color: var(--title-text-color);
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+
+
+.box-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.box-overlay::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    opacity: 1;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.box-overlay:hover .box-link::before,
+.box-overlay:focus .box-link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(0);
+    opacity: 1;
+
+
+}
+
+.text-overlay {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+    padding: 63px 24px;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.box-link {
+    display: block;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.box-link:hover .text-overlay,
+.box-link:focus .text-overlay {
+    transform: translateY(0);
+    opacity: 1;
+
+    background-color: rgba(33, 150, 243, 0.9);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
